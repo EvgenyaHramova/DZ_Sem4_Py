@@ -7,14 +7,15 @@
 import math
 
 
-d = input("Задайте значение точности числа: ")
+d = input("Задайте значение точности числа π: ")
 count = 0
-i=0
+
 if '.' in d:
     num = d.split('.')[1]
-print(num)    
-for i in len(num):
+#print(num)    
+for i in num:
     count+=1
-print(count)
+#print(count)
 
-#print(math.pi * d)
+print("π = ", round((math.pi), count))
+
